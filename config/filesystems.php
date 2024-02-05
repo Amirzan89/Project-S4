@@ -30,9 +30,14 @@ return [
 
     'disks' => [
 
-        'local' => [
+        'admin' => [
             'driver' => 'local',
-            'root' => storage_path('app'),
+            'root' => storage_path('app/admin'),
+            'throw' => false,
+        ],
+        'konsultasi' => [
+            'driver' => 'local',
+            'root' => storage_path('app/konsultasi'),
             'throw' => false,
         ],
 
